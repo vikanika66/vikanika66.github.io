@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html>
-
-
+<html lang="ru">
 <head>
 
-
-
-	<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJK0WB4FDX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,36 +13,128 @@
 </script>
 
 
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viktoriia Iachmeneva</title>
 <style>
-h1 {
-  color: blue;
-  font-family: verdana;
-  font-size: 300%;
-}
-p {
-  color: red;
-  font-family: courier;
-  font-size: 160%;
-}
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
+  .container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+  }
 
-	color : #114B5F;
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+  }
 
+  .main-heading {
+    font-size: 3em; /* Increased font size */
+    color: #ff6600; /* Orange */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    animation: pulse 1s infinite alternate; /* Added pulse animation */
+  }
 
-}
+  @keyframes pulse {
+    0% {
+      transform: rotate(180deg) scale(1);
+    }
+    100% {
+      transform: rotate(180deg) scale(1.2); /* Scale up to 120% */
+    }
+  }
 
+  .right-column {
+    flex: 1;
+  }
+
+  .right-right-column {
+    flex: 2;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+
+  .section-heading {
+    font-size: 1.5em;
+    color: #333; /* Dark gray */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+
+  .section-content p {
+    margin: 5px 0;
+  }
 </style>
 </head>
-
-
-
 <body>
-<div style="margin-top:30px;width:600px;height:300px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
-	<h1>Hello World</h1>
-	<div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF"> 
-	</div>
+<div class="container">
+  <div class="left-column">
+    <h1 class="main-heading">Viktoriia Iachmeneva</h1>
+  </div>
+  
+  <div class="right-column">
+    <div class="section">
+      <h2 class="section-heading">Personal Information</h2>
+      <div class="section-content">
+        <p>Name: John Doe</p>
+        <p>Email: john@example.com</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-heading">Stack</h2>
+      <div class="section-content">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+      </div>
+    </div>
+    </div>
+  <div class="right-right-column">
+    <div class="section">
+      <h2 class="section-heading">Experience</h2>
+      <div class="section-content">
+        <p>Software Engineer</p>
+        <p>Example Company</p>
+        <p>June 2022 - Present</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-heading">Education</h2>
+      <div class="section-content">
+        <p>Bachelor of Science in Computer Science</p>
+        <p>University of Example</p>
+        <p>Graduated: May 2022</p>
+      </div>
+    </div>
+  </div>
 </div>
-<p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
