@@ -16,7 +16,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viktoriia Iachmeneva</title>
+<title>Main Page</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@
 
   .container {
     position: relative;
-    max-width: 800px;
+    max-width: 1100px;
     margin: 50px auto;
     background-color: #ffffff;
     padding: 20px;
@@ -39,6 +39,7 @@
 
   .left-column {
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -67,11 +68,18 @@
   }
 
   .right-column {
-    flex: 1;
+/*    flex: 1;  */
+
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
   }
 
   .right-right-column {
-    flex: 2;
+/*    flex: 2;*/
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
   }
 
   .section {
@@ -82,59 +90,122 @@
     font-size: 1.5em;
     color: #333; /* Dark gray */
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     margin-bottom: 10px;
+
+  }
+
+  .section-heading:hover {
+    color: #ff6600; /* Orange */
+    font-size: 1.6em; /* Increased font size on hover */
   }
 
   .section-content p {
-    margin: 5px 0;
+    margin: 8px ;
+    margin-left: 15px;
   }
+
+  .block {
+  display: block; /* Forces each block to appear on its own line */
+  margin-bottom: 20px; /* Adds spacing between blocks */
+}
+
+.two-in-row {
+    position: relative;
+    max-width: 1100px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10pxrgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
 </style>
 </head>
 <body>
 <div class="container">
+  
   <div class="left-column">
-    <h1 class="main-heading">Viktoriia Iachmeneva</h1>
+    <h1 class="main-heading">Data Analyst</h1>
   </div>
   
-  <div class="right-column">
-    <div class="section">
-      <h2 class="section-heading">Personal Information</h2>
-      <div class="section-content">
-        <p>Name: John Doe</p>
-        <p>Email: john@example.com</p>
-        <p>Phone: 123-456-7890</p>
+  <div >
+    <h3 class="section-heading" >Viktoriia Iachmeneva</h3>
+    <h3 class="section-heading" >Email: <b>iamvictoriatasou@gmail.com</b></h3>
+    <h3 class="section-heading" >Phone: +381621215967</h3>
+    
+    <hr>
+    
+    <div class = "two-in-row">
+
+      <div class="section">
+        <div class="right-column">
+          <h2 class="section-heading">Stack</h2>
+          <div class="section-content">
+            <p>Python</p>
+            <p>SQL</p>
+            <p>Math Stats</p>
+            <p>ClickHouse + Google Big Query </p>
+            <p>Excel/Google Sheets</p>
+            <p>Airflow + Azkaban</p>
+            <p>Google Analytics(UA&4)/Yandex Metrika/AppsFlyer</p>
+            <p>Google Tag Manager</p>
+            <p>Google Optimize</p>
+            <p>GA API/CH API</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
       </div>
+
+
+
+      <div class="right-right-column">
+        <div class="section">
+          <h2 class="section-heading">Experience</h2>
+          <div class="section-content">
+            <p>Software Engineer</p>
+            <p>Example Company</p>
+            <p>June 2022 - Present</p>
+          </div>
+        </div>
+      </div>
+
+<!-- two in row close -->
     </div>
 
-    <div class="section">
-      <h2 class="section-heading">Stack</h2>
-      <div class="section-content">
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JavaScript</p>
-      </div>
-    </div>
-    </div>
-  <div class="right-right-column">
-    <div class="section">
-      <h2 class="section-heading">Experience</h2>
-      <div class="section-content">
-        <p>Software Engineer</p>
-        <p>Example Company</p>
-        <p>June 2022 - Present</p>
-      </div>
-    </div>
+    <div class ="two-in-row">
 
-    <div class="section">
-      <h2 class="section-heading">Education</h2>
-      <div class="section-content">
-        <p>Bachelor of Science in Computer Science</p>
-        <p>University of Example</p>
-        <p>Graduated: May 2022</p>
+      <div class="section">
+        <div class="right-column">
+          <h2 class="section-heading">Stack</h2>
+          <div class="section-content">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
       </div>
-    </div>
+
+
+        <div class="section">
+          <div class="right-right-column">
+            <h2 class="section-heading">Education</h2>
+            <div class="section-content">
+              <p>Bachelor of Science in Computer Science</p>
+              <p>University of Example</p>
+              <p>Graduated: May 2022</p>
+            </div>
+          </div>
+        </div>
+      <!-- two in row close -->
+      </div> 
+ 
   </div>
+
 </div>
 </body>
 </html>
